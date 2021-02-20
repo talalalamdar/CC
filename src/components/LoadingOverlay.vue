@@ -1,5 +1,5 @@
 <template>
-  <div class="loadingOverlay">
+  <div class="loadingOverlay" v-animate-css="animation">
     <h3 class="loadingOverlay__header">
       Wacht aub even
     </h3>
@@ -38,7 +38,12 @@ export default {
         'Alle antworden ontvangen',
         'Geen dubbele registraties gevonden',
         'Gefeliciteerd, je komt in annmerking!',
-      ]
+      ],
+      animation: {
+        classes: 'flipInY',
+        delay: 0,
+        duration: 500,
+      }
     }
   },
 }

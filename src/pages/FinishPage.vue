@@ -1,5 +1,5 @@
 <template>
-  <div class="finishPage">
+  <div class="finishPage" v-animate-css="animation">
     <div class="finishPage__header">
       <div class="finishPage__header__text">
         Bedankt voor je deelname
@@ -114,7 +114,13 @@ export default {
           endDate: '03-09-2020',
           link: '#',
         },
-      ]
+      ],
+
+      animation: {
+        classes: 'zoomInDown',
+        delay: 0,
+        duration: 500,
+      }
     }
   }
 }
