@@ -1,6 +1,7 @@
 {
   "name": "coding-challenge",
   "version": "0.1.0",
+  "author": "Talal Alamdar",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -9,7 +10,10 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "normalize.css": "^8.0.1",
+    "vue": "^2.6.11",
+    "vue-date-dropdown": "^1.0.5",
+    "vue-spinner": "^1.0.4"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.5.0",
