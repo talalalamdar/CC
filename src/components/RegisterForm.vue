@@ -59,11 +59,11 @@
       <date-dropdown min="1960" max="2017" v-model="selectedDate" class="form__date" />
     </div>
 
-    <div class="input-group mt-2 mb-3">
+    <div class="input-group mt-2 mb-3 _is_hidden_desktop">
       <input type="text" class="form-control form__input" v-model="address" placeholder="Address" />
     </div>
 
-    <div class="input-group mt-2 mb-3">
+    <div class="input-group mt-2 mb-3 _is_hidden_desktop">
       <input type="text" class="form-control form__input" v-model="phonenumber" placeholder="Phone No." />
     </div>
 
@@ -178,6 +178,12 @@ input:focus {
 
 .form-check-label {
   font-size: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  ._is_hidden_desktop {
+    display: none;
+  }
 }
 
 </style>

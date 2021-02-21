@@ -65,6 +65,7 @@ body {
   border: none !important;
   border-bottom: 1px solid #fff !important;
   color: #fff !important;
+  border-radius: 0 !important;
 }
 
 .date-dropdown-select:focus {
