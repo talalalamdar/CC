@@ -110,7 +110,6 @@ export default {
 </script>
 
 <style scoped>
-
 .form__entry {
   margin-bottom: 8px;
   font-size: 18px;
@@ -140,6 +139,10 @@ export default {
 
 .form__radioWrapper:first-child {
   margin-right: 16px;
+}
+
+.steps__desktop {
+  display: none;
 }
 
 .form__button {
@@ -180,9 +183,14 @@ input:focus {
   font-size: 16px;
 }
 
+/* desktop styles */
 @media only screen and (min-width: 768px) {
   ._is_hidden_desktop {
     display: none;
+  }
+
+  .steps__desktop {
+    display: flex;
   }
 }
 
